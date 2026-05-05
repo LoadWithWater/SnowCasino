@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bwetx66vc8eak"]
+
+[ext_resource type="AudioStream" uid="uid://big72hsg72bto" path="res://builds/Professor Layton and the Last Time Travel OST - カジノナンバー7.mp3" id="1_i26rj"]
+
+[node name="MainMenu" type="Control" unique_id=320872265]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=188861126]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 646.0
+color = Color(0.71497697, 0.9805376, 0.3951504, 0.5764706)
+
+[node name="Button" type="Button" parent="." unique_id=264728643]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.157
+anchor_top = 0.20400001
+anchor_right = 0.157
+anchor_bottom = 0.20400001
+offset_left = 348.136
+offset_top = 296.80798
+offset_right = 458.136
+offset_bottom = 330.80798
+text = "Game Start"
+
+[node name="Button2" type="Button" parent="." unique_id=151293715]
+layout_mode = 0
+offset_left = 530.0
+offset_top = 482.0
+offset_right = 643.0
+offset_bottom = 517.0
+text = "End"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1329451261]
+stream = ExtResource("1_i26rj")
+autoplay = true
